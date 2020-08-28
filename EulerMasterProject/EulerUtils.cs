@@ -32,22 +32,28 @@ namespace EulerUtils
         /// </summary>
         /// <param name="maxValueToCheck">the last number in a series that needs to be prime checked.</param>
         /// <returns>HashSet that contains only prime numbers from 2 to maxValue</returns>
-        public static HashSet<int> PrimeNumbers(int maxValueToCheck)
+        public static List<int> PrimeNumbers(int maxValueToCheck)
         {
-            HashSet<int> primeNumbers = new HashSet<int>();
-            for (int i = 2; i < maxValueToCheck; i++)
+            double primeNumberCheckUpperBound = Math.Sqrt(maxValueToCheck);
+            bool[] numbersToCheckForPrime = new bool[maxValueToCheck + 1];
+            for (int baseFactor = 2; baseFactor <= primeNumberCheckUpperBound && !numbersToCheckForPrime[baseFactor]; baseFactor++)
             {
-                primeNumbers.Add(i);
+                for (int multipleToCheck = baseFactor * 2;
+                    multipleToCheck <= maxValueToCheck;
+                    multipleToCheck += baseFactor)
+                {
+                    numbersToCheckForPrime[multipleToCheck] = true;
+                }
             }
-
-            foreach (int numToCheck in primeNumbers)
+            List<int> primeNumbers = new List<int>();
+            for (int i = 2; i < numbersToCheckForPrime.Length; i++)
             {
-
+                if (numbersToCheckForPrime[i] == false)
+                {
+                    primeNumbers.Add(i);
+                }
             }
-            for (int i = 2; i < Math.Sqrt(maxValueToCheck); i++)
-            {
-
-            }
+            return primeNumbers;
         }
 
         public static string ReverseNumberAsString(string toReverse)

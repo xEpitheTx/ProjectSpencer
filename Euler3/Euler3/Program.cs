@@ -11,11 +11,11 @@ namespace Euler3
             int largestPrimeFactor = 0;
             for (int i = 1; i < SQUAREROOT_OF_EVALUATION_NUMBER; i += 2)
             {
-                    if (IsPrime(i) && 600851475143 % i == 0)
-                    {
-                        largestPrimeFactor = i;
-                        //Console.WriteLine(largestPrimeFactor);
-                    }
+                if (IsPrime(i) && 600851475143 % i == 0)
+                {
+                    largestPrimeFactor = i;
+                    //Console.WriteLine(largestPrimeFactor);
+                }
             }
             Console.WriteLine($"The largest Prime factor is: {largestPrimeFactor}");
         }

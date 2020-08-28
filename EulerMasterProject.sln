@@ -43,6 +43,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Euler2", "Euler2\Euler2\Eul
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Euler3", "Euler3\Euler3\Euler3.csproj", "{1D8E171C-4424-4EA3-82DE-EE1E27F492E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Euler3LargestPrimeFactor", "Euler3LargestPrimeFactor\Euler3LargestPrimeFactor.csproj", "{001EBEE7-3C0D-48A5-83DF-E76819AF0500}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -293,6 +295,18 @@ Global
 		{1D8E171C-4424-4EA3-82DE-EE1E27F492E6}.Release|x64.Build.0 = Release|Any CPU
 		{1D8E171C-4424-4EA3-82DE-EE1E27F492E6}.Release|x86.ActiveCfg = Release|Any CPU
 		{1D8E171C-4424-4EA3-82DE-EE1E27F492E6}.Release|x86.Build.0 = Release|Any CPU
+		{001EBEE7-3C0D-48A5-83DF-E76819AF0500}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{001EBEE7-3C0D-48A5-83DF-E76819AF0500}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{001EBEE7-3C0D-48A5-83DF-E76819AF0500}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{001EBEE7-3C0D-48A5-83DF-E76819AF0500}.Debug|x64.Build.0 = Debug|Any CPU
+		{001EBEE7-3C0D-48A5-83DF-E76819AF0500}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{001EBEE7-3C0D-48A5-83DF-E76819AF0500}.Debug|x86.Build.0 = Debug|Any CPU
+		{001EBEE7-3C0D-48A5-83DF-E76819AF0500}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{001EBEE7-3C0D-48A5-83DF-E76819AF0500}.Release|Any CPU.Build.0 = Release|Any CPU
+		{001EBEE7-3C0D-48A5-83DF-E76819AF0500}.Release|x64.ActiveCfg = Release|Any CPU
+		{001EBEE7-3C0D-48A5-83DF-E76819AF0500}.Release|x64.Build.0 = Release|Any CPU
+		{001EBEE7-3C0D-48A5-83DF-E76819AF0500}.Release|x86.ActiveCfg = Release|Any CPU
+		{001EBEE7-3C0D-48A5-83DF-E76819AF0500}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
